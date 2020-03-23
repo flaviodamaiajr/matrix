@@ -21,20 +21,17 @@ const createRoomFileSync = () => {
 
   roomsData[0] = {
     id: uuid(),
-    name: "The Dock",
-    disableMeeting: true,
+    name: "The BMA Dock",
+    disableMeeting: true
   };
 
   const niceNames = [
-    "Nebuchadnezzar",
-    "Logos",
-    "Osiris",
-    "Icarus",
-    "Caduceus",
-    "Brahma",
-    "Novalis",
-    "Vigilant",
-    "Zion",
+    "Diretoria",
+    "Desenvolvimento",
+    "Suporte",
+    "Marketing",
+    "Administrativo",
+    "Comercial"
   ];
 
   for (const niceName of niceNames) {
@@ -48,14 +45,14 @@ const createRoomFileSync = () => {
   fs.writeFileSync(roomFilePath, JSON.stringify(roomsData));
 };
 
-const fetchFromEnvironment = (env) => {
+const fetchFromEnvironment = env => {
   const roomsData = env.ROOMS_DATA;
   const roomsDetail = JSON.parse(roomsData);
 
   return new Promise(resolve => resolve(roomsDetail));
 };
 
-const fetchRooms = (strategy) => {
+const fetchRooms = strategy => {
   switch (strategy) {
     // TODO add suport to fetch from endpoint
     case "ENVIRONMENT":

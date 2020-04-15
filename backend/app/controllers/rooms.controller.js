@@ -25,14 +25,20 @@ const createRoomFileSync = () => {
     disableMeeting: true
   };
 
+//  const niceNames = [
+//    "Diretoria",
+//    "Desenvolvimento",
+//    "Suporte",
+//    "Marketing",
+//    "Administrativo",
+//    "Comercial",
+//    "Café ☕️"
+//  ];
+  
   const niceNames = [
-    "Diretoria",
-    "Desenvolvimento",
-    "Suporte",
-    "Marketing",
-    "Administrativo",
-    "Comercial",
-    "Café ☕️"
+   "WACESSO - Controle de Acesso",
+   "WGEP - Gestão de Pessoas",
+   "WPE - Ponto Eletrônico"
   ];
 
   for (const niceName of niceNames) {

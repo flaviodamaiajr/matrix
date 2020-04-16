@@ -38,7 +38,8 @@ const createRoomFileSync = () => {
   const niceNames = [
    "WACESSO - Controle de Acesso",
    "WGEP - Gestão de Pessoas",
-   "WPE - Ponto Eletrônico"
+   "WPE - Ponto Eletrônico",
+   "SISDM - Gestão Empresarial"
   ];
 
   for (const niceName of niceNames) {
